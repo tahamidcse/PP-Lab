@@ -1,0 +1,5 @@
+mpicc/mpic++ filename.c/fname.cpp -o file
+mpirun -np 4 --allow-run-as-root ./p phonebook.txt RIA
+!nvcc -arch=sm_75 cuda.cu -o file
+!time ./file 10 100
+!time ./file RIA 2 > output.txt
